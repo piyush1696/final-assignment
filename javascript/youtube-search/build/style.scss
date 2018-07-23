@@ -1,0 +1,140 @@
+$background : #F9F9F9;
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: $background;
+}
+
+.navigation {
+    background-color: #FFFFFF;
+    border-bottom: 2px solid #CCCCCC;
+    overflow: auto;
+    position: relative;
+    padding: 10px;
+
+    .logo {
+        float: left;
+        padding: 10px;
+        width: 8%;
+
+        .logo-image {
+            vertical-align: middle;
+            width: 100%;
+        }
+    }
+
+    .search-box {
+        text-align: center;
+        padding: 5px;
+
+        input[type="text"] {
+            border: 1px solid #CCCCCC;
+            font-size: 16px;
+            padding: 5px;
+            width: 60%;
+        }
+
+        button {
+            border: 1px solid #CCCCCC;
+            font-size: 16px;
+            margin-left: -5px;
+            margin-top: -3px;
+            vertical-align: middle;
+
+            .fa-search {
+               padding: 5px 20px 4px;
+            }
+        }
+    }
+}
+
+#content {
+    margin: 10px auto;
+    width: 90%;
+    overflow: hidden;
+
+    .video-box{
+        border: 10px solid $background;
+        float: left;
+        width: 25%;
+        height: 300px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+
+        .video-thumnail-img {
+            width: 100%;
+
+            &:before {
+                content: ' ';
+                background-image: url("../images/default.png");
+            }
+        }
+
+        .data {
+            padding: 10px 0;
+            .video-title {
+                font-size: 16px;
+                font-weight: 900;
+                letter-spacing: .6px;
+                padding: 5px 0;
+            }
+
+            .video-description {
+                box-sizing: border-box;
+                height: auto;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+#offline-state {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    bottom: 0;
+    display: none;
+    padding: 10px 10px;
+    position: fixed;
+    width: 100%;
+
+    span{
+        color: red;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #content {
+        margin: 0px;
+        width: 100%;
+        padding: 10px;
+
+        .video-box {
+            width: 100%;
+            margin: 0;
+            height: auto;
+
+            .data {
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 780px) and (min-width: 481px) {
+    #content {
+        margin: 0px;
+        width: 100%;
+        padding: 10px;
+
+        .video-box {
+            width: 50%;
+            margin: 0;
+            height: 350px;
+
+            .data {
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
