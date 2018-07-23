@@ -1,0 +1,18 @@
+{
+  "name": "google-map",
+  "version": "1.0.0",
+  "description": "google Map",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "google",
+    "map"
+  ],
+  "author": "Piyush Chandak",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
