@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Book Villa</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="asset/css/book.css">
+        <script src="libs/jquery/dist/jquery.min.js"></script>
+        <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="libs/mustache/mustache.min.js"></script>
+        <script src="component/book-component.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base href="/">
+    </head>
+    <body>
+        <header class="header navbar navbar-default">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 navbar-header">
+                        <div class="navbar-brand">
+                            <a class="heading " href="#">Book Villa</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-8 search-box">
+                        <input type="text" placeholder="Search" onkeypress="searchBook()" id="search-field">
+                        <button class="book-button btn btn-default" onclick="searchBook()"> <i class="fa fa-search"></i></button>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#subjects" aria-expanded="false">
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                         </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container-fluid">
+            <div class="content-wrapper">
+                <div class="row">
+                    <div id="subjects" class="col-xs-12 col-sm-2"></div>
+
+                    <div class="col-xs-12 col-sm-10 collection-wrapper">
+                        <div id="book-collection"></div>
+                        <div class="loader"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="book-modal" class="modal fade" role="dialog" data-backdrop="static"></div>
+
+        <script src="js/book.js"></script>
+    </body>
+</html>

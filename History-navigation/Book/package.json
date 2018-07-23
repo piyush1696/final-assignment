@@ -1,0 +1,26 @@
+{
+  "name": "book-api",
+  "version": "1.0.0",
+  "description": "We are trying to get book detail from api using ajax call and displaying it. We will also maintain history of book search.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "html",
+    "sass",
+    "jquery",
+    "book-api",
+    "ajax",
+    "history-api"
+  ],
+  "author": "Piyush Chandak",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "http-server": "^0.11.1",
+    "jquery": "^3.3.1",
+    "mustache": "^2.3.0"
+  }
+}

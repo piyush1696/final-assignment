@@ -1,0 +1,25 @@
+<div class="book-column col-xs-12 col-sm-4 col-md-3">
+    <div class="thumbnail book-wrapper">
+        <div class="content-wrapper">
+            <div class="book-image-wrapper">
+                <img src="/../asset/images/default-book.png" class="img-responsive book-image" alt="{{Title}}" />
+                <div class="book-isbn">Book ISBN
+                    <div class="isbn-number">{{isbn}}</div>
+                </div>
+            </div>
+            <div class="book-name">{{shortTitle}}</div>
+            <p class="book-description">{{shortDescription}}</p>
+        </div>
+        <div class="action-wrapper">
+            <div class="rating-bar">
+                <ul class="list-inline">
+                    {{#rating}}
+                    <li class="icon"><i class="{{.}} fa" onclick="setRatingBar(event)"></i></li>
+                    {{/rating}}
+                </ul>
+            </div>
+            <div class="icon favourite"><i class="heart-unchecked fa fa-heart-o" onclick="setFavourite(event)"></i></div>
+        </div>
+        <button class="button-detail btn btn-primary" data-toggle="modal" data-target="#book-modal" onclick="showBookDetail({{ID}})">Detail</button>
+    </div>
+</div>
