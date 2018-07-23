@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.test {
+  margin-top: 45px;
+}
+
+header  {
+  background-color: rgba(40,40,40,.6);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.element {
+  background-color: #000000;
+  height: 30px;
+  margin: 10px 20px;
+  width: 70px;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.col {
+  background-color: orange;
+  height: 400px;
+  margin: 10px;
+  width: 20%;
+}
+
+footer {
+  background-color: rgba(40,40,40,.4);
+  padding: 20px;
+}
