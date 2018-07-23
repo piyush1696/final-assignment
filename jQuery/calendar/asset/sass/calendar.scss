@@ -1,0 +1,222 @@
+@import 'variables';
+
+.calendar {
+    padding-top: 50px;
+
+    .calendar-year {
+        background-color: $blue-1;
+        color: $white;
+        font-size: 20px;
+        padding: 10px;
+        text-align: center;
+
+        #current-year {
+            background: inherit;
+            border: none;
+            color: $white;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    .calendar-month {
+        background-color: $blue-2;
+        color: $white;
+        font-size: 18px;
+        padding: 10px;
+        text-align: center;
+
+        #current-month {
+            background: inherit;
+            border: none;
+            color: $white;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    .button {
+        background-color: inherit;
+        border: none;
+        color: $white;
+        font-size: 18px;
+        padding: 0;
+
+        &:hover {
+            color: $white;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .calendar-week {
+        color: $black;
+        padding: 0;
+        overflow: auto;
+
+        .heading {
+            background-color: $blue-3;
+            color: $white;
+            font-size: 18px;
+            font-weight: 200;
+            float: left;
+            margin: 0;
+            padding: 20px 0px;
+            text-align: center;
+            width: 12.5%;
+        }
+    }
+
+    .date-wrapper {
+        color: $black;
+        padding: 0;
+
+        .date {
+            cursor: pointer;
+            float: left;
+            font-size: 20px;
+            margin:  1px 0;
+            padding: 10px;
+            position: relative;
+            text-align: right;
+            width: 12.5%;
+
+            .birthday {
+                background-color: $blue-4;
+                border-radius: 50%;
+                bottom: 15px;
+                display: inline-block;
+                height: 15px;
+                left: 20px;
+                position: absolute;
+                width: 15px;
+            }
+
+            &:nth-child(odd) {
+                background-color: $blue-5;
+            }
+
+            &:nth-child(even){
+                background-color: $blue-6;
+            }
+        }
+
+        .week {
+            background-color: $blue-3;
+            color: $white;
+            cursor: pointer;
+            float: left;
+            font-size: 20px;
+            font-weight: 100;
+            margin:  1px 0;
+            padding: 10px;
+            text-align: center;
+            width: 12.5%;
+        }
+
+        .off-date {
+            color: $grey;
+        }
+
+        .today-date {
+            background-color: $blue-8 !important;
+            color: $white;
+            font-weight: 200;
+        }
+
+        .selected {
+            background-color: $blue-7 !important;
+            color: $white;
+            opacity: .8;
+        }
+
+        .current-date-selected {
+            background-color: $blue-9 !important;
+        }
+    }
+
+    .date-range-wrapper {
+        clear: both;
+        font-weight: 400;
+        letter-spacing: 1px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .calendar {
+        #previous-year, #previous-month {
+            padding-left: 20px;
+        }
+
+        #next-year, #next-month {
+            padding-right: 20px;
+        }
+
+        .calendar-year, .calendar-month {
+            font-size: 16px;
+        }
+
+        .calendar-week {
+            .heading {
+                font-size: 14px;
+            }
+        }
+
+        .date-wrapper {
+            .date, .week {
+                font-size: 12px;
+
+                .birthday {
+                    height: 8px;
+                    left: 6px;
+                    width: 8px;
+                }
+            }
+        }
+
+        .date-range-wrapper {
+            font-size: 10px;
+        }
+    }
+}
+
+@media screen and(max-width: 789px) and (min-width: 469px) {
+    .calendar {
+        .calendar-year {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .calendar-month {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .calendar-week {
+            .heading {
+                font-size: 16px;
+            }
+        }
+
+        .date-wrapper {
+            .date, .week {
+                font-size: 16px;
+
+                .birthday {
+                    height: 12px;
+                    width: 12px;
+                }
+            }
+        }
+        .date-range-wrapper {
+            font-size: 14px;
+        }
+    }
+}

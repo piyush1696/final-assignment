@@ -1,0 +1,139 @@
+.calendar {
+  padding-top: 50px; }
+  .calendar .calendar-year {
+    background-color: #0277BD;
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center; }
+    .calendar .calendar-year #current-year {
+      background: inherit;
+      border: none;
+      color: #FFFFFF; }
+      .calendar .calendar-year #current-year:focus {
+        outline: none; }
+  .calendar .calendar-month {
+    background-color: #0288D1;
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center; }
+    .calendar .calendar-month #current-month {
+      background: inherit;
+      border: none;
+      color: #FFFFFF; }
+      .calendar .calendar-month #current-month:focus {
+        outline: none; }
+  .calendar .button {
+    background-color: inherit;
+    border: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 0; }
+    .calendar .button:hover {
+      color: #FFFFFF; }
+    .calendar .button:focus {
+      outline: none; }
+  .calendar .calendar-week {
+    color: #000000;
+    padding: 0;
+    overflow: auto; }
+    .calendar .calendar-week .heading {
+      background-color: #039BE5;
+      color: #FFFFFF;
+      font-size: 18px;
+      font-weight: 200;
+      float: left;
+      margin: 0;
+      padding: 20px 0px;
+      text-align: center;
+      width: 12.5%; }
+  .calendar .date-wrapper {
+    color: #000000;
+    padding: 0; }
+    .calendar .date-wrapper .date {
+      cursor: pointer;
+      float: left;
+      font-size: 20px;
+      margin: 1px 0;
+      padding: 10px;
+      position: relative;
+      text-align: right;
+      width: 12.5%; }
+      .calendar .date-wrapper .date .birthday {
+        background-color: #1A237E;
+        border-radius: 50%;
+        bottom: 15px;
+        display: inline-block;
+        height: 15px;
+        left: 20px;
+        position: absolute;
+        width: 15px; }
+      .calendar .date-wrapper .date:nth-child(odd) {
+        background-color: #E1F5FE; }
+      .calendar .date-wrapper .date:nth-child(even) {
+        background-color: #B3E5FC; }
+    .calendar .date-wrapper .week {
+      background-color: #039BE5;
+      color: #FFFFFF;
+      cursor: pointer;
+      float: left;
+      font-size: 20px;
+      font-weight: 100;
+      margin: 1px 0;
+      padding: 10px;
+      text-align: center;
+      width: 12.5%; }
+    .calendar .date-wrapper .off-date {
+      color: rgba(40, 40, 40, 0.4); }
+    .calendar .date-wrapper .today-date {
+      background-color: #1565C0 !important;
+      color: #FFFFFF;
+      font-weight: 200; }
+    .calendar .date-wrapper .selected {
+      background-color: #64B5F6 !important;
+      color: #FFFFFF;
+      opacity: .8; }
+    .calendar .date-wrapper .current-date-selected {
+      background-color: #217ee7 !important; }
+  .calendar .date-range-wrapper {
+    clear: both;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 10px; }
+
+@media screen and (max-width: 468px) {
+  .calendar #previous-year, .calendar #previous-month {
+    padding-left: 20px; }
+  .calendar #next-year, .calendar #next-month {
+    padding-right: 20px; }
+  .calendar .calendar-year, .calendar .calendar-month {
+    font-size: 16px; }
+  .calendar .calendar-week .heading {
+    font-size: 14px; }
+  .calendar .date-wrapper .date, .calendar .date-wrapper .week {
+    font-size: 12px; }
+    .calendar .date-wrapper .date .birthday, .calendar .date-wrapper .week .birthday {
+      height: 8px;
+      left: 6px;
+      width: 8px; }
+  .calendar .date-range-wrapper {
+    font-size: 10px; } }
+@media screen and (max-width: 789px) and (min-width: 469px) {
+  .calendar .calendar-year {
+    font-size: 18px;
+    font-weight: bold; }
+  .calendar .calendar-month {
+    font-size: 16px;
+    font-weight: bold; }
+  .calendar .calendar-week .heading {
+    font-size: 16px; }
+  .calendar .date-wrapper .date, .calendar .date-wrapper .week {
+    font-size: 16px; }
+    .calendar .date-wrapper .date .birthday, .calendar .date-wrapper .week .birthday {
+      height: 12px;
+      width: 12px; }
+  .calendar .date-range-wrapper {
+    font-size: 14px; } }
+
+/*# sourceMappingURL=calendar.css.map */

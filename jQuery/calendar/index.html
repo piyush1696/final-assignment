@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calendar</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="asset/css/calendar.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+            <div class="calendar">
+                <div class="calendar-year">
+                    <div class="row">
+                        <button id="previous-year" class="button btn col-xs-1"> &lt; </button>
+                        <div class="year col-xs-10"></div>
+                        <button id="next-year" class="button btn col-xs-1"> &gt; </button>
+                    </div>
+                </div>
+                <div class="calendar-month">
+                    <div class="row">
+                        <button id="previous-month" class="button btn col-xs-1"> &lt; </button>
+                        <div class="month col-xs-10"></div>
+                        <button id="next-month" class="button btn col-xs-1"> &gt; </button>
+                    </div>
+                </div>
+                <div class="calendar-week"></div>
+                <div class="date-wrapper"></div>
+                <p class="date-range-wrapper bg-primary">Selected Dates are <span id="date-range"></span> </p>
+            </div>
+        </div>
+        <script src="js/calendar.js"></script>
+    </body>
+</html>
