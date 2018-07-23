@@ -1,0 +1,50 @@
+$white-shade: #ffffff;
+.section-4 {
+    background-color: $white-shade;
+    margin: 75px auto;
+    width: 80%;
+
+    .head-image {
+        width: 300px;
+    }
+
+    .section-body {
+        margin: 50px auto;
+
+        .box-title {
+            font-weight: 100;
+            font-size: 14px;
+            letter-spacing: .8px;
+            margin: 70px 0px 50px 0;
+        }
+
+        .row {
+            clear: both;
+            overflow: auto;
+            width: 100%;
+
+            .col {
+                color: #8f8f8f;
+                float: left;
+                padding: 10px 15px;
+                width: 30%;
+
+                .col-left {
+                    float: left;
+                    text-align: left;
+                    width: 90%;
+
+                    strong{
+                        color:#808080;
+                    }
+                }
+
+                .col-right {
+                    float:right;
+                    text-align: right;
+                    width: 10%;
+                }
+            }
+        }
+    }
+}

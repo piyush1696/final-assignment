@@ -1,0 +1,107 @@
+$image_path: "../../images/";
+$dark-shade: #000000;
+$white-shade: #FFFFFF;
+
+body {
+   margin: 0;
+   padding: 0;
+   font-family: 'Raleway', sans-serif;
+}
+
+@import 'navigation';
+@import 'section2';
+@import 'section4';
+@import 'section5';
+@import 'section6';
+
+
+.text-align-center {
+    text-align: center;
+}
+
+.section-1 {
+    background-image: url($image_path + "section-1.jpg");
+    background-position: center;
+    background-size: cover;
+    .content {
+        background-color: rgba(0, 0, 0, .2);
+        margin-top: -90px;
+        padding: 300px 175px;
+        .heading {
+            color: $white-shade;
+            font-size: 72px;
+            font-weight: 900;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            }
+        .sub-heading {
+            color: $white-shade;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 300;
+            letter-spacing: 5px;
+        }
+    }
+}
+
+.section-3 {
+    background-image: url($image_path + "section-3.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.footer{
+
+    .social-connect {
+        background-color: #1f1f1f;
+        padding: 40px;
+
+        .circle {
+            border: 2px solid $white-shade;
+            border-radius: 50%;
+            color: $white-shade;
+            display: inline-block;
+            font-size: 20px;
+            min-width: 30px;
+            min-height: 20px;
+            margin: 10px;
+            padding: 10px;
+
+            &:hover {
+                background-color: $white-shade;
+                color: $dark-shade;
+            }
+        }
+    }
+    .end {
+        background-color: #171717;
+        color: #dfdfdf;
+        font-size: 14px;
+        padding: 20px 10px;
+
+        span {
+            font-size: 14px;
+            padding: 10px;
+        }
+
+        .owner {
+            color: #3d3d3d;
+            font-size: 14px;
+            padding:20px 0 50px 0;
+
+            a{
+                border-bottom: 1px solid #3d3d3d;
+                color: #3d3d3d;
+                text-decoration: none;
+
+                &:hover{
+                    border-bottom: 1px solid #808080;
+                    color:#808080;
+                }
+            }
+        }
+    }
+}
+
+@import 'responsive';

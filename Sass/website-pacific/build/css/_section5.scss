@@ -1,0 +1,52 @@
+$image_path: "../../images/";
+$white-shade: #ffffff;
+
+.section-5 {
+    background-image: url($image_path+"bear.jpg");
+    background-size: cover;
+    background-position: top;
+    color: $white-shade;
+
+    .container {
+        background-color: rgba(0,0,0,.2);
+        padding: 120px 0 80px 0;
+
+        .head-image {
+            width: 325px;
+            margin-bottom: 100px;
+        }
+
+        .section-body {
+            color: #968b89;
+            margin: 50px auto;
+            width: 80%;
+
+            .row {
+                clear: both;
+                overflow: auto;
+                width: 100%;
+
+                .col {
+                    color: #8f8f8f;
+                    float: left;
+                    padding: 10px 15px;
+                    width: 30%;
+
+                    .col-left {
+                        float: left;
+                        text-align: left;
+                        width: 90%;
+
+                        strong{
+                            color: $white-shade;
+                        }
+                    }
+
+                    .col-right{
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+}
