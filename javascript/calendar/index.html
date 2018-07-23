@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calendar</title>
+        <link href="css/calendar.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="title">Calendar</h1>
+            <div class="row row-1">
+                <button onclick="previousYear()" class="btn previous"> < </button>
+                <span id="year">Year</span>
+                <button onclick="nextYear()" class="btn next"> > </button>
+            </div>
+            <div class="row row-2">
+                <button onclick="previousMonth()" class="btn previous"> < </button>
+                <span id="month">Month</span>
+                <button onclick="nextMonth()" class="btn next"> > </button>
+            </div>
+            <div class="row row-3">
+                <div class="heading">Week</div>
+                <div class="heading">Sunday</div>
+                <div class="heading">Monday</div>
+                <div class="heading">Tuesday</div>
+                <div class="heading">Wednesday</div>
+                <div class="heading">Thrusday</div>
+                <div class="heading">Friday</div>
+                <div class="heading">Saturday</div>
+            </div>
+            <div class ="row row-4">
+                <div id="display-dates">
+                    <div class="date-container "></div>
+                </div>
+            </div>
+            <p>Selected Dates are </p>
+            <p id="date-range"></p>
+        </div>
+         <script src="js/calendar.js"></script>
+    </body>
+</html>

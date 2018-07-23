@@ -1,0 +1,104 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0; }
+
+.container {
+  margin: 0 auto;
+  width: 80%; }
+  .container .title {
+    text-align: center; }
+  .container .row {
+    color: #FFFFFF;
+    overflow: auto; }
+  .container .row-1 {
+    background-color: #0277BD;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center; }
+  .container .row-2 {
+    background-color: #0288D1;
+    font-size: 18px;
+    padding: 15px;
+    text-align: center; }
+  .container .previous {
+    color: #FFFFFF;
+    float: left; }
+  .container .next {
+    color: #FFFFFF;
+    float: right; }
+  .container .btn {
+    background-color: inherit;
+    border: none;
+    font-size: 18px; }
+  .container .btn:active {
+    border: none; }
+  .container .row-3 {
+    color: #000000;
+    overflow: auto; }
+    .container .row-3 .heading {
+      background-color: #039BE5;
+      color: #FFFFFF;
+      font-size: 18px;
+      font-weight: 200;
+      float: left;
+      padding: 20px 0px;
+      text-align: center;
+      width: 128px; }
+  .container .row-4 {
+    color: #000000; }
+    .container .row-4 #display-dates .date-container {
+      cursor: pointer;
+      display: inline-block;
+      margin: 1px 0;
+      position: relative;
+      width: 128px; }
+      .container .row-4 #display-dates .date-container .color {
+        background-color: #1A237E; }
+      .container .row-4 #display-dates .date-container .week {
+        background-color: #64B5F6;
+        color: #FFFFFF;
+        font-size: 20px;
+        font-weight: 100;
+        padding: 10px; }
+      .container .row-4 #display-dates .date-container .date {
+        font-size: 20px;
+        padding: 10px 40px;
+        position: relative;
+        text-align: right; }
+      .container .row-4 #display-dates .date-container .circle {
+        border-radius: 50%;
+        bottom: 15px;
+        display: inline-block;
+        height: 15px;
+        left: 20px;
+        position: absolute;
+        width: 15px; }
+      .container .row-4 #display-dates .date-container .light-circle {
+        border-radius: 50%;
+        bottom: 15px;
+        display: inline-block;
+        height: 15px;
+        left: 20px;
+        opacity: .7;
+        position: absolute;
+        width: 15px; }
+      .container .row-4 #display-dates .date-container:nth-child(odd) {
+        background-color: #E1F5FE; }
+      .container .row-4 #display-dates .date-container:nth-child(even) {
+        background-color: #B3E5FC; }
+    .container .row-4 #display-dates .hidden-date {
+      color: rgba(40, 40, 40, 0.4); }
+    .container .row-4 #display-dates .week {
+      color: #000000;
+      text-align: center; }
+    .container .row-4 #display-dates .today-date {
+      background-color: #1565C0;
+      color: #FFFFFF;
+      font-weight: 200; }
+    .container .row-4 #display-dates .date-range {
+      background-color: #64B5F6;
+      color: #FFFFFF;
+      opacity: .5; }
+
+/*# sourceMappingURL=calendar.css.map */
