@@ -1,0 +1,659 @@
+$backgroundColor: #EE6086;
+$backgroundGreyColor: #EEEEEE;
+$backgroundDarkGreyColor: #EFEFEF;
+$backgroundWhiteColor: #FFFFFF;
+$fontColor : #757575;
+$grey: #9E9E9E;
+@mixin button($backgroundColor) {
+    background-color: $backgroundColor;
+    border-radius: 20px;
+    color: #FFFFFF;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.navigation {
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 10px 10px;
+    // position: fixed;
+    width: 100%;
+    z-index: 100;
+
+        .brand-name {
+            padding: 0 10px;
+            overflow: auto;
+
+            .image {
+                height: 55px;
+            }
+        }
+
+        .align-right {
+            padding-right: 20px;
+
+            .button {
+                @include button($backgroundColor);
+            }
+        }
+}
+
+.cover {
+    background-image: url("../images/background.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+
+    .cover-info {
+        color: #FFFFFF;
+        padding: 150px 0;
+
+        .pre-content{
+            font-size: 16px;
+        }
+        .main-heading {
+            font-size: 54px;
+            padding-bottom: 30px;
+        }
+
+        .sub-heading {
+            font-size: 15px;
+            margin-bottom: 45px;
+            padding: 10px;
+        }
+
+        .btn {
+            @include button($backgroundColor);
+            padding: 10px 20px;
+        }
+    }
+
+    .cover-box {
+        .box-wrapper {
+            padding: 50px 30px;
+
+            .icon {
+                font-size: 48px;
+                color: $backgroundColor;
+            }
+            .head {
+                padding: 10px;
+            }
+            .details {
+                    color: $fontColor;
+                    line-height: 25px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    padding: 10px;
+                    min-height: 150px;
+            }
+        }
+
+        .bg-white {
+            background-color: $backgroundWhiteColor;
+        }
+
+        .bg-grey {
+            background-color: $backgroundDarkGreyColor;
+        }
+    }
+}
+
+.information {
+    .heading {
+        padding: 70px 0 0 0 ;
+    }
+    .row {
+        padding: 70px 0 0 0 ;
+
+        .content {
+            padding: 100px 50px;
+
+            .title {
+                color: $backgroundColor;
+                margin-bottom: 20px;
+            }
+
+            .description {
+                color: $grey;
+                line-height: 25px;
+            }
+
+            .button {
+                @include button($backgroundColor);
+                margin: 10px;
+                padding: 10px 30px;
+                font-size: 14px;
+                font-weight: 200;
+            }
+        }
+    }
+}
+
+.section-3 {
+    background-image: url(../images/tag-3.jpg);
+    background-position: center;
+    color: #FFFFFF;
+    font-size: 16px;
+
+    .wrapper {
+        background-color: rgba(40, 40, 40, .7);
+        padding: 80px 0 120px 0;
+
+        .row {
+            margin-top: 30px;
+            .block {
+                padding: 10px;
+
+                .title {
+                    .heading-overlay {
+                        position: absolute;
+                        top: -26px;
+                        left: 26px;
+                        font-size: 52px;
+                        color: $grey;
+                        opacity: .5;
+                    }
+
+                    .heading {
+                        color: $backgroundWhiteColor;
+                        position: relative;
+                        font-size: 18px;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        padding-bottom: 20px;
+                    }
+
+                }
+
+                .describe {
+                    font-size: 16px;
+                    word-spacing: 1px;
+                }
+
+                .link {
+                    color: $backgroundColor;
+
+                    &:hover {
+                        opacity: .7;
+                        text-decoration: none;
+                    }
+                }
+
+                .highlight {
+                    font-size: 32px;
+                    font-weight: 500;
+                }
+
+                p {
+                    word-spacing: 1px;
+                    letter-spacing: .5px;
+                    font-weight: 500;
+                }
+
+                .button {
+                    @include button($backgroundColor);
+                    margin: 10px;
+                    padding: 10px 30px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+.team-wrapper {
+    padding: 30px 0;
+
+    .container {
+        .heading {
+            font-size: 32px;
+        }
+
+        .sub-heading {
+            font-size: 16px;
+            color: $grey;
+        }
+
+        .team-row {
+            width: 75%;
+            margin: 0 auto;
+
+             .team-member {
+                border: none;
+
+                .image-wrapper {
+                     margin-top: 30px;
+                     position: relative;
+
+                     .social-links {
+                         bottom: 5%;
+                         display: none;
+                         left: 15%;
+                         position: absolute;
+                         width: 100%;
+
+                         .icon {
+                             color: #FFFFFF;
+                             border: 2px solid #FFFFFF;
+                             border-radius: 50%;
+                             margin: 10px;
+                             padding: 10px;
+
+                             &:hover {
+                                 border-color: #000000;
+                                 color: #000000;
+                            }
+                        }
+                     }
+
+                     &:hover .image {
+                         opacity: .5;
+                     }
+                     &:hover .social-links {
+                         display: block;
+                     }
+                 }
+
+                .team-person-name {
+                    font-size: 18px;
+                    font-weight: 900;
+                    padding: 10px 0 0 0;
+                }
+
+                .team-person-work {
+                    padding: 5px 0;
+                    font-weight: 500;
+                    font-size: 14px;
+                }
+
+                .team-person-description {
+                    color: lighten($fontColor, 10%);
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+.proud {
+    background-image: url(../images/tag-4.jpg);
+
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    font-size: 16px;
+
+    .wrapper {
+        background-color: rgba(40, 40, 40, .2);
+        padding: 20px 0 150px 0;
+
+        .heading {
+            font-size: 34px;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .sub-heading {
+            font-size: 16px;
+            color: $backgroundWhiteColor;
+        }
+    }
+}
+
+.blog-container {
+    background-color: $backgroundGreyColor;
+    padding: 40px;
+
+    .container {
+        .heading {
+            font-size: 32px;
+            padding: 20px 0;
+        }
+
+        .blog {
+            border: 0;
+            padding: 0;
+
+            .image-wrapper {
+                position: relative;
+
+                .label-top {
+                    @include button($backgroundColor);
+                    font-size: 14px;
+                    font-weight: 400;
+                    left: 5%;
+                    position: absolute;
+                    padding: 10px 20px;
+                    top: 10%;
+                }
+            }
+
+            .blog-content-wrapper {
+                background-color: #FFFFFF;
+                padding: 25px;
+
+                .blog-title {
+                    font-size: 30px;
+                    margin: 0;
+                }
+
+                .short-description {
+                    margin-top: 10px;
+                    font-size: 16px;
+                }
+
+                .button {
+                    @include button($backgroundColor);
+                    margin: 10px;
+                    padding: 10px 20px;
+                }
+            }
+        }
+    }
+}
+
+.performance {
+    background-image: url(../images/tag-3.jpg);
+    background-position: center;
+    color: #FFFFFF;
+    font-size: 16px;
+
+    .wrapper {
+        background-color: rgba(40, 40, 40, .7);
+        padding: 80px 0;
+    }
+}
+
+.footer {
+    background-color: $backgroundWhiteColor;
+    padding: 50px 0 0 0 ;
+
+    .main-heading {
+        margin-bottom: 30px;
+    }
+
+    .icon {
+        border-radius: 50%;
+        color: #FFFFFF;
+        font-size: 22px;
+        padding: 10px;
+        width: 45px;
+    }
+
+    .fa-facebook {
+        background-color: #3E5B98;
+    }
+
+    .fa-google {
+        background-color: #DD4B39;
+    }
+
+    .fa-twitter {
+        background-color: #4DA7DE;
+    }
+    .row {
+        padding-top: 50px;
+
+        .small-col {
+            padding: 30px 0;
+
+            .image {
+                width: 50%;
+                margin: 0 auto;
+            }
+
+            .address {
+                .street {
+                    font-size: 14px;
+                }
+                .city {
+                    font-size: 14px;
+                }
+            }
+
+            .contact {
+                .email {
+                    font-size: 14px;
+                }
+                .phone {
+                    font-size: 14px
+                }
+                .fax {
+                    font-size: 14px;
+                }
+            }
+
+            .timming {
+                .heading {
+                    color: #000000;
+                    padding-bottom: 20px;
+                    font-weight: 400;
+                }
+
+                .week {
+                    font-weight: 900;
+                    font-size: 16px;
+                    letter-spacing: .5px;
+                    text-align: right;
+                }
+
+                .time {
+                    padding-left: 20px;
+                    font-size: 16px;
+                    font-weight: 10;
+
+                }
+
+                table tr {
+                        line-height: 24px;
+                }
+            }
+
+            .contact-form {
+                .input-control {
+                    border: none;
+                    border-radius: none;
+                    border-bottom: 1px solid #000000;
+                    width: 100%;
+                    padding: 10px 0;
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                    &::placeholder {
+                        color: #000000;
+                    }
+                }
+
+                .textarea {
+                    resize: none;
+                }
+
+                .button {
+                    @include button($backgroundColor);
+                    margin: 10px;
+                    padding: 10px 30px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:468px) {
+    .cover {
+
+
+        .cover-info{
+            padding: 70px 0;
+            .pre-content {
+
+            }
+
+            .main-heading {
+                font-size: 32px;
+            }
+
+            .sub-heading {
+                padding: 0;
+            }
+        }
+
+        .cover-box {
+            .box-wrapper {
+                margin-bottom: 1px;
+
+                .details {
+                    min-height: auto;
+                }
+            }
+        }
+    }
+
+    .information {
+        padding-bottom: 20px;
+        .heading {
+            padding-top: 20px;
+            font-size:24px;
+        }
+        .row {
+            .content {
+                padding: 10px;
+                text-align: center;
+
+                .title {
+                    font-size: 24px;
+                    text-align: center;
+                }
+
+                .description {
+                    line-height: 26px;
+                    text-align: center;
+                }
+            }
+        }
+
+    }
+
+    .section-3 {
+        text-align: center;
+
+        .wrapper {
+            padding: 50px 0;
+
+            .row {
+                .block {
+                    .title {
+                        .heading-overlay {
+                            font-size: 48px;
+                            left: 165px;
+                            top: 0px;
+                        }
+                    }
+                }
+                .sub-block {
+                    padding-top: 20px;
+                }
+            }
+        }
+    }
+
+    .team-wrapper {
+        text-align: center;
+
+        .container {
+            .team-row {
+                width: 100%;
+                text-align: center;
+
+                .team-member {
+                    .image-wrapper {
+                        .social-links {
+                            left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .blog-container {
+        padding: 20px 0px;
+        .container {
+            .heading {
+                font-size: 24px;
+                line-height: 26px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) and (min-width: 469px) {
+    .team-wrapper {
+        .container {
+            .team-row {
+                width: 100%;
+
+                .team-member {
+                    .image-wrapper {
+                        text-align: center;
+                        .social-links {
+                            left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .section-3 .wrapper {
+        .content-row {
+            width: 98%;
+            margin: 0 auto;
+        }
+        .row .block {
+            .title {
+                .heading-overlay {
+                    left: 30px;
+                }
+
+                .heding {
+                    font-size: 16px;
+                }
+            }
+
+            .describe {
+                font-size: 14px;
+            }
+        }
+    }
+    .information {
+        padding-bottom: 20px;
+
+        .row {
+            .content {
+                padding: 0 70px;
+            }
+            .image {
+                padding: 80px 0;
+            }
+        }
+    }
+    .cover {
+        .cover-info {
+            .sub-heading {
+                line-height: 2;
+            }
+        }
+        .cover-box {
+            .box-wrapper {
+                padding: 50px 10px;
+                
+                .details {
+                    min-height: 246px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
